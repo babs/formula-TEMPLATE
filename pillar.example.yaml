@@ -1,0 +1,11 @@
+TEMPLATE:
+  # Comment comment comment
+  things:
+    - foo
+    - bar
+    - baz
+  user:
+    # Comment comment comment
+    blah:
+      # Comment comment comment
+      key: AAAAA=

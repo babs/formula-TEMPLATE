@@ -1,0 +1,27 @@
+kind: SaltFormulaManifest
+apiVersion: v1
+name: TEMPLATE
+summary: TEMPLATE formula
+description: |
+    Formula to use as a template for other formulas
+keywords:
+  - mariadb
+minimum_version: 3005.1
+last_review_date:
+os_family: Debian
+require:
+  - another-formula
+orch:
+  - name: orch-bootstrap.sh
+    role: bootstrap
+
+  - name: orch-upgrade.sh
+    role: upgrade
+    
+compat matrix:
+  - components: 
+    - name: my-component
+      version: "*"
+    os:
+    - name: Debian
+      versions: ["10", "11"]
