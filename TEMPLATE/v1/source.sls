@@ -1,4 +1,4 @@
-{% from './macros.jinja' import debsource with context %}
+{% from slspath ~ '/macros.jinja' import debsource with context %}
 
 {{
   debsource(
