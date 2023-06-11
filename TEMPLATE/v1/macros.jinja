@@ -1,3 +1,10 @@
+{#
+Use as:
+
+  {% from slspath ~ '/macros.jinja' import relfile with context %}
+
+#}
+
 {% macro relfile(fname) -%}
 {{ 'salt://' ~ slspath ~ '/files/' ~ fname }}
 {%- endmacro %}
